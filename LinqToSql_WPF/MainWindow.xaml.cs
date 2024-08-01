@@ -30,7 +30,11 @@ namespace LinqToSql_WPF
             dataContext = new LinqToSqlDataClassesDataContext(connectionString);
 
             //InsertUniversities();
-            InsertStudent();
+            //InsertStudent();
+            //InsertLectures();
+            //InsertStudentLectureAssociation();
+            //GetUniversityOfKumi();
+            GetKumisLectures();
         }
 
         public void InsertUniversities()
@@ -68,5 +72,58 @@ namespace LinqToSql_WPF
             MainDataGrid.ItemsSource = dataContext.Students;
 
         }
+
+        public void InsertLectures()
+        {
+            dataContext.Lectures.InsertOnSubmit(new Lecture() { Name = "C++"});
+            dataContext.Lectures.InsertOnSubmit(new Lecture() { Name = "C#"});
+            dataContext.Lectures.InsertOnSubmit(new Lecture() { Name = "Python"});
+
+            dataContext.SubmitChanges();
+            MainDataGrid.ItemsSource = dataContext.Lectures;
+        }
+
+        public void InsertStudentLectureAssociation()
+        {
+            Student kumi = dataContext.Students.First(s => s.Name.Equals("El Kumi"));
+            Student tony = dataContext.Students.First(s => s.Name.Equals("Tony"));
+            Student mari = dataContext.Students.First(s => s.Name.Equals("Mari"));
+            Student lucy = dataContext.Students.First(s => s.Name.Equals("Lucy"));
+
+            Lecture cpp = dataContext.Lectures.First(l => l.Name.Equals("C++"));
+            Lecture cs = dataContext.Lectures.First(l => l.Name.Equals("C#"));
+            Lecture python = dataContext.Lectures.First(l => l.Name.Equals("Python"));
+
+            dataContext.StudentLectures.InsertOnSubmit(new StudentLecture() { Student = kumi, Lecture = cpp});
+            dataContext.StudentLectures.InsertOnSubmit(new StudentLecture() { Student = mari, Lecture = python});
+            dataContext.StudentLectures.InsertOnSubmit(new StudentLecture() { Student = kumi, Lecture = cs});
+            dataContext.StudentLectures.InsertOnSubmit(new StudentLecture() { Student = lucy, Lecture = python});
+
+            dataContext.SubmitChanges();
+            MainDataGrid.ItemsSource = dataContext.StudentLectures;
+        }
+
+        public void GetUniversityOfKumi()
+        {
+            Student kumi = dataContext.Students.First(s => s.Name.Equals("El Kumi"));
+            University kumisUniversity = kumi.University;
+
+            List<University> universities = new List<University>();
+            universities.Add(kumisUniversity);
+
+            MainDataGrid.ItemsSource = universities;//datagrid requires ienumerable
+        }
+
+        public void GetKumisLectures()
+        {
+            Student kumi = dataContext.Students.First(k => k.Name.Equals("El Kumi"));
+
+            var kumisLectures = from lecture in kumi.StudentLectures
+                                select lecture.Lecture;
+
+            MainDataGrid.ItemsSource = kumisLectures;
+        }
+
+
     }
 }

@@ -11,14 +11,8 @@
       "RelativeMoniker": "D:0:0:{E5A32D20-48FF-4C5A-A46D-9EAD40168A26}|LinqToSql_WPF\\LinqToSql_WPF.csproj|solutionrelative:linqtosql_wpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5A32D20-48FF-4C5A-A46D-9EAD40168A26}|LinqToSql_WPF\\LinqToSql_WPF.csproj|C:\\Users\\Mikey\\Desktop\\C#\\LinqToSql_WPF\\linqtosql_wpf\\linqtosqldataclasses.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|",
+      "AbsoluteMoniker": "D:0:0:{E5A32D20-48FF-4C5A-A46D-9EAD40168A26}|LinqToSql_WPF\\LinqToSql_WPF.csproj|c:\\users\\mikey\\desktop\\c#\\linqtosql_wpf\\linqtosql_wpf\\linqtosqldataclasses.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|",
       "RelativeMoniker": "D:0:0:{E5A32D20-48FF-4C5A-A46D-9EAD40168A26}|LinqToSql_WPF\\LinqToSql_WPF.csproj|solutionrelative:linqtosql_wpf\\linqtosqldataclasses.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/MikeyPC_EL_KUMI/FirstDB/sa/SqlTable/dbo.University.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/MikeyPC_EL_KUMI/FirstDB/sa/SqlTable/dbo.Student.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,28 +22,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "dbo.Student [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/MikeyPC_EL_KUMI/FirstDB/sa/SqlTable/dbo.Student.sql",
-              "ToolTip": "dbo.Student [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-08-01T10:54:53.646Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "dbo.University [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/MikeyPC_EL_KUMI/FirstDB/sa/SqlTable/dbo.University.sql",
-              "ToolTip": "dbo.University [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-08-01T10:39:58.341Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -59,7 +33,20 @@
               "ToolTip": "C:\\Users\\Mikey\\Desktop\\C#\\LinqToSql_WPF\\LinqToSql_WPF\\LinqToSqlDataClasses.dbml",
               "RelativeToolTip": "LinqToSql_WPF\\LinqToSqlDataClasses.dbml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001722|",
-              "WhenOpened": "2024-08-01T10:12:28.991Z",
+              "WhenOpened": "2024-08-01T11:02:39.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Mikey\\Desktop\\C#\\LinqToSql_WPF\\LinqToSql_WPF\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "LinqToSql_WPF\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Mikey\\Desktop\\C#\\LinqToSql_WPF\\LinqToSql_WPF\\MainWindow.xaml.cs",
+              "RelativeToolTip": "LinqToSql_WPF\\MainWindow.xaml.cs",
+              "ViewState": "AQIAAFsAAAAAAAAAAAAcwHIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-01T11:00:29.595Z",
               "EditorCaption": ""
             },
             {
@@ -72,19 +59,6 @@
               "RelativeToolTip": "LinqToSql_WPF\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-08-01T09:50:29.982Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Mikey\\Desktop\\C#\\LinqToSql_WPF\\LinqToSql_WPF\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "LinqToSql_WPF\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Mikey\\Desktop\\C#\\LinqToSql_WPF\\LinqToSql_WPF\\MainWindow.xaml.cs",
-              "RelativeToolTip": "LinqToSql_WPF\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAAB8AAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T09:50:29.427Z",
               "EditorCaption": ""
             }
           ]
