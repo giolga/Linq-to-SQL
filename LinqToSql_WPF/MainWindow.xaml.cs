@@ -34,7 +34,10 @@ namespace LinqToSql_WPF
             //InsertLectures();
             //InsertStudentLectureAssociation();
             //GetUniversityOfKumi();
-            GetKumisLectures();
+            //GetKumisLectures();
+            //GetAllStudentsFromCU();
+            //GetAllUniversitiesWithFemale();
+            LecturesAtBtu();
         }
 
         public void InsertUniversities()
@@ -64,7 +67,7 @@ namespace LinqToSql_WPF
             students.Add(new Student() { Name = "El Kumi", Gender = "Kacuri kaci", UniversityId = cu.Id});
             students.Add(new Student() { Name = "Tony", Gender = "Male", University = cu });
             students.Add(new Student() { Name = "Mari", Gender = "Female", University = cu });
-            students.Add(new Student() { Name = "Lucy", Gender = "Feale", University = btu });
+            students.Add(new Student() { Name = "Lucy", Gender = "Female", University = btu });
 
             dataContext.Students.InsertAllOnSubmit(students);
             dataContext.SubmitChanges();
@@ -124,6 +127,35 @@ namespace LinqToSql_WPF
             MainDataGrid.ItemsSource = kumisLectures;
         }
 
+        public void GetAllStudentsFromCU()
+        {
+            var studentsFromCU = from student in dataContext.Students
+                                 where student.University.Name.Equals("CU")
+                                 select student;
 
+            MainDataGrid.ItemsSource = studentsFromCU;
+        }
+
+        public void GetAllUniversitiesWithFemale()
+        {
+            var universitiesWithFemaleGender = from student in dataContext.Students
+                                               join university in dataContext.Universities
+                                               on student.University equals university
+                                               where student.Gender == "Female"
+                                               select university;
+
+            MainDataGrid.ItemsSource = universitiesWithFemaleGender;
+        }
+
+        public void LecturesAtBtu()
+        {
+            var lecturesBtu = from sl in dataContext.StudentLectures
+                              join student in dataContext.Students
+                              on sl.StudentId equals student.Id
+                              where student.University.Name == "BTU"
+                              select sl.Lecture;
+
+            MainDataGrid.ItemsSource = lecturesBtu;
+        }
     }
 }

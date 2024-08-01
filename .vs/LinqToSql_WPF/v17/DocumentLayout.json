@@ -9,10 +9,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E5A32D20-48FF-4C5A-A46D-9EAD40168A26}|LinqToSql_WPF\\LinqToSql_WPF.csproj|C:\\Users\\Mikey\\Desktop\\C#\\LinqToSql_WPF\\linqtosql_wpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{E5A32D20-48FF-4C5A-A46D-9EAD40168A26}|LinqToSql_WPF\\LinqToSql_WPF.csproj|solutionrelative:linqtosql_wpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5A32D20-48FF-4C5A-A46D-9EAD40168A26}|LinqToSql_WPF\\LinqToSql_WPF.csproj|c:\\users\\mikey\\desktop\\c#\\linqtosql_wpf\\linqtosql_wpf\\linqtosqldataclasses.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|",
-      "RelativeMoniker": "D:0:0:{E5A32D20-48FF-4C5A-A46D-9EAD40168A26}|LinqToSql_WPF\\LinqToSql_WPF.csproj|solutionrelative:linqtosql_wpf\\linqtosqldataclasses.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,20 +18,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LinqToSqlDataClasses.dbml",
-              "DocumentMoniker": "C:\\Users\\Mikey\\Desktop\\C#\\LinqToSql_WPF\\LinqToSql_WPF\\LinqToSqlDataClasses.dbml",
-              "RelativeDocumentMoniker": "LinqToSql_WPF\\LinqToSqlDataClasses.dbml",
-              "ToolTip": "C:\\Users\\Mikey\\Desktop\\C#\\LinqToSql_WPF\\LinqToSql_WPF\\LinqToSqlDataClasses.dbml",
-              "RelativeToolTip": "LinqToSql_WPF\\LinqToSqlDataClasses.dbml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001722|",
-              "WhenOpened": "2024-08-01T11:02:39.713Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -44,7 +28,7 @@
               "RelativeDocumentMoniker": "LinqToSql_WPF\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\Mikey\\Desktop\\C#\\LinqToSql_WPF\\LinqToSql_WPF\\MainWindow.xaml.cs",
               "RelativeToolTip": "LinqToSql_WPF\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAFsAAAAAAAAAAAAcwHIAAAAJAAAA",
+              "ViewState": "AQIAAHwAAAAAAAAAAAAAAKEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-01T11:00:29.595Z",
               "EditorCaption": ""
