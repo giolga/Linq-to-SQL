@@ -37,7 +37,9 @@ namespace LinqToSql_WPF
             //GetKumisLectures();
             //GetAllStudentsFromCU();
             //GetAllUniversitiesWithFemale();
-            LecturesAtBtu();
+            //LecturesAtBtu();
+            //UpdateKumi();
+            DeleteLucy();
         }
 
         public void InsertUniversities()
@@ -156,6 +158,30 @@ namespace LinqToSql_WPF
                               select sl.Lecture;
 
             MainDataGrid.ItemsSource = lecturesBtu;
+        }
+
+        public void UpdateKumi()
+        {
+            Student kumi = dataContext.Students.FirstOrDefault(k => k.Name.Equals("El Kumi"));
+            kumi.Name = "kumi el fuego";
+            dataContext.SubmitChanges();
+
+            MainDataGrid.ItemsSource = dataContext.Students;
+        }
+
+        public void DeleteLucy()
+        {
+
+            Student lucy = dataContext.Students.FirstOrDefault(l => l.Name.Equals("Lucy"));
+            dataContext.Students.DeleteOnSubmit(lucy);
+            dataContext.SubmitChanges();
+
+
+            // in order to delete from db execute the following code :)
+            string connectionString = ConfigurationManager.ConnectionStrings["LinqToSql_WPF.Properties.Settings.FirstDBConnectionString"].ConnectionString;
+            LinqToSqlDataClassesDataContext db = new LinqToSqlDataClassesDataContext(connectionString);
+
+            MainDataGrid.ItemsSource = dataContext.Students;
         }
     }
 }
